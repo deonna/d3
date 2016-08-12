@@ -17,9 +17,9 @@
      d3.csv('climate_data.csv', function(data) {
 
          dots = viz.selectAll('circle')
-                      .data(data)
-                      .enter()
-                     .append('circle');
+                    .data(data)
+                    .enter()
+                    .append('circle');
 
         dots.attr('r', function(d) {return d.TMAX});
 
